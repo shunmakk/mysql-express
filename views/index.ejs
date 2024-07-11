@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>サンプル</title>
+</head>
+<body>
+    <ul style="background-color: aqua;">
+        <%
+         items.forEach((item) => { %>
+            <li style="list-style: none;">
+                <div>
+                    <span><%= item.id %></span>
+                    <span><%= item.name %></span>
+                </div>
+            </li>
+        <%  })
+         %>
+    </ul>
+</body>
+</html>
